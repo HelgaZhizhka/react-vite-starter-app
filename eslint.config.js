@@ -6,12 +6,16 @@ import react from 'eslint-plugin-react';
 import tseslint from 'typescript-eslint';
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 import reactCompiler from 'eslint-plugin-react-compiler';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 
 export default tseslint.config(
-  { ignores: [
+  { 
+    ignores: [
     'node_modules',
     'dist',
-  ] },
+    ] 
+  },
+  jsxA11y.flatConfigs.recommended,
   {
     extends: [
       js.configs.recommended,
