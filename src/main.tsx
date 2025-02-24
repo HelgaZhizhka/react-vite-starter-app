@@ -4,8 +4,16 @@ import { createRoot } from 'react-dom/client';
 import { App } from '@/components/api';
 import './index.css';
 
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-createRoot(document.getElementById('root')!).render(
+const rootElement =
+  document.querySelector('#root') ??
+  ((): HTMLDivElement => {
+    const element = document.createElement('div');
+    element.id = 'root';
+    document.body.append(element);
+    return element;
+  })();
+
+createRoot(rootElement).render(
   <StrictMode>
     <App />
   </StrictMode>
