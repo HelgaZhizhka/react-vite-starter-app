@@ -67,7 +67,6 @@ export default tseslint.config(
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
       ],
-      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "unicorn/no-array-callback-reference": "off",
       "unicorn/no-array-for-each": "off",
       "unicorn/no-array-reduce": "off",

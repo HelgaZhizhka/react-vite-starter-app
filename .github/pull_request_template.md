@@ -11,4 +11,3 @@
 - Section "Today's weather" displays the following data (15/20)
   - [x] use weather data and location (10)
   - [±] clock, refreshed each second (5/10)
-    ...
