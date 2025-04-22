@@ -40,10 +40,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': 'off',
       'react-compiler/react-compiler': 'error',
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
@@ -73,19 +70,7 @@ export default tseslint.config(
       "unicorn/no-null": "off",
       "unicorn/number-literal-case": "off",
       "unicorn/numeric-separators-style": "off",
-      "unicorn/prevent-abbreviations": [
-        "error",
-        {
-          "allowList": {
-            "acc": true,
-            "env": true,
-            "i": true,
-            "j": true,
-            "props": true,
-            "Props": true
-          }
-        }
-      ],
+      "unicorn/prevent-abbreviations": "off",
     },
     settings: {
       react: {
