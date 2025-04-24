@@ -1,6 +1,18 @@
-# React18 + TypeScript5 + Vite6 + TailwindCSS
+# React19 + TypeScript5.8 + Vite6 + Vitest + pnpm
 
-This is the sample setup, created with [Vite](https://vitejs.dev/guide/) and for the purposes of showing the bare minimum required for the React application.
+This is a modern React starter setup built with [Vite](https://vitejs.dev/), using **pnpm** as a package manager.  
+It includes strict linting, formatting, testing setup, and environment variables support.
+
+## 🚀 Tech Stack
+
+- **React 19**
+- **TypeScript 5.8**
+- **Vite 6**
+- **pnpm**
+- **Vitest** for unit testing
+- **Husky** + **lint-staged** for Git hooks
+- **ESLint**, **Prettier**, **StyleLint** for code quality
+- `.env` support for configuration
 
 ## Linting and Formatting
 
@@ -31,7 +43,9 @@ Project uses husky and lint-staged for:
 
 - Automatic code formatting on commit
 - Linting before commit
+- Prettier before commit
 - TypeScript type checking
+- Running tests before pushing
 
 ## Development Guidelines
 
@@ -51,27 +65,65 @@ Project uses husky and lint-staged for:
    - Follow established CSS properties order
    - Use CSS variables for repeated values
 
+## 📦 Installation
+
+```bash
+pnpm install
+```
+
+## 🏗️ Development
+
+```bash
+pnpm run dev
+```
+
+## 🧪 Testing
+
+```bash
+pnpm run test
+```
+
+## 🏗️ Build
+
+```bash
+pnpm run build
+```
+
+## 🧪 Test Coverage
+
+```bash
+pnpm run test:coverage
+```
+
+## Setup Git hooks
+
+```bash
+pnpm run prepare
+```
+
+## ESLint
+
+```bash
+pnpm run lint:fix
+```
+
+## Environment Variables
+
+- Create a `.env` file in the root directory
+- Add your environment variables in the format `VITE_YOUR_VARIABLE=value`
+- Access them in your code using `import.meta.env.VITE_YOUR_VARIABLE`
+
 ## Troubleshooting
 
-### Common Issues and Solutions
+- If you encounter issues with ESLint or Prettier, try deleting the `.eslintcache` file and re-running the linting command.
+- If you encounter issues with Husky, try re-installing it using `pnpm prepare`.
 
-1. **ESLint Conflicts**
+## Clear ESLint Cache
 
-   ```bash
-   npm run lint:fix
-   ```
-
-2. **Git Hooks Issues**
-
-   ```bash
-   npm run prepare
-   ```
-
-3. **Clear ESLint Cache**
-   ```bash
-   npm run lint -- --cache-location .eslintcache
-   ```
+```bash
+pnpm run lint -- --cache-location .eslintcache
+```
 
 ## License
 
-[Specify your license]
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
