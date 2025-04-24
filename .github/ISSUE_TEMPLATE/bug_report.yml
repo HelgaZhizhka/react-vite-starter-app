@@ -1,7 +1,7 @@
 name: 🐛 Bug Report
 description: Report a bug or unexpected behavior
-title: "bugfix:"
-labels: ["bugfix"]
+title: 'bugfix:'
+labels: ['bugfix']
 assignees: []
 
 body:
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Bug description
       description: Describe the bug briefly
-      placeholder: "Homepage crashes on login"
+      placeholder: 'Homepage crashes on login'
     validations:
       required: true
 
@@ -27,6 +27,6 @@ body:
     attributes:
       label: Expected behavior
       description: What did you expect to happen?
-      placeholder: "Login form should appear"
+      placeholder: 'Login form should appear'
     validations:
       required: false

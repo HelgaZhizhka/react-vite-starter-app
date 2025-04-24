@@ -1,7 +1,7 @@
 name: 🎨 Changes in styles
 description: Change the appearance and the positioning of the components
-title: "style:"
-labels: ["style"]
+title: 'style:'
+labels: ['style']
 assignees: []
 
 body:
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Short summary
       description: How the code quality is being improved?
-      placeholder: "Move the duplicated code to a separate module"
+      placeholder: 'Move the duplicated code to a separate module'
     validations:
       required: true
 
@@ -27,6 +27,6 @@ body:
     attributes:
       label: Additional details (optional)
       description: Detailed description
-      placeholder: "Add utility function to encode a string into base64 format. It can be reused now"
+      placeholder: 'Add utility function to encode a string into base64 format. It can be reused now'
     validations:
       required: false

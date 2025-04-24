@@ -1,7 +1,7 @@
 name: ⚙️ Project settings / Configuration change
 description: Add / delete packages, modify configuration files
-title: "config:"
-labels: ["configuration"]
+title: 'config:'
+labels: ['configuration']
 assignees: []
 
 body:
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Short summary
       description: What package is being added / deleted / updated? What configuration is being changed?
-      placeholder: "Add Ant Design"
+      placeholder: 'Add Ant Design'
     validations:
       required: true
 
@@ -27,6 +27,6 @@ body:
     attributes:
       label: Additional details (optional)
       description: Why do (not) we need this package? Why do we need this change?
-      placeholder: "It will be used to ensure unity of component styles"
+      placeholder: 'It will be used to ensure unity of component styles'
     validations:
       required: false

@@ -1,7 +1,7 @@
 name: ✔️ Unit Test
 description: Add unit test for a component
-title: "test:"
-labels: ["test"]
+title: 'test:'
+labels: ['test']
 assignees: []
 
 body:
@@ -18,7 +18,7 @@ body:
   - type: input
     attributes:
       label: What component is being tested
-      placeholder: "Language selector"
+      placeholder: 'Language selector'
     validations:
       required: true
 
@@ -26,6 +26,6 @@ body:
     attributes:
       label: Additional details (optional)
       description: What behavior is being tested
-      placeholder: "1. Default language is EN / 2. The language can be selected / 3. ..."
+      placeholder: '1. Default language is EN / 2. The language can be selected / 3. ...'
     validations:
       required: false

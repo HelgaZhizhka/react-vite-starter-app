@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Suggest a new feature or improvement
-title: "feature:"
-labels: ["feature"]
+title: 'feature:'
+labels: ['feature']
 assignees: []
 
 body:
@@ -19,7 +19,7 @@ body:
     attributes:
       label: Short summary
       description: Briefly describe the feature you're suggesting
-      placeholder: "Add Router to project"
+      placeholder: 'Add Router to project'
     validations:
       required: true
 
@@ -27,6 +27,6 @@ body:
     attributes:
       label: Additional details (optional)
       description: Provide any additional context, screenshots, or mockups
-      placeholder: "This feature ..."
+      placeholder: 'This feature ...'
     validations:
       required: false

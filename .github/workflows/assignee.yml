@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  
+
 jobs:
   assign:
     runs-on: ubuntu-latest
