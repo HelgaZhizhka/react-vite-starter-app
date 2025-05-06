@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "engines": {
+    "node": ">=22.15.0"
+  },
   "scripts": {
     "dev": "vite --open",
     "build": "tsc -b && vite build",
-    "lint": "cross-env NODE_OPTIONS='--no-warnings' eslint . --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "cross-env NODE_OPTIONS='--no-warnings' eslint . --fix --report-unused-disable-directives --max-warnings 0",
+    "lint": "cross-env NODE_OPTIONS=--no-warnings eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "cross-env NODE_OPTIONS=--no-warnings eslint . --fix --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write --ignore-unknown .",
     "format:check": "prettier --list-different --ignore-unknown .",
@@ -42,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-compiler": "^19.1.0-rc.1",
+    "eslint-plugin-react-compiler": "19.1.0-rc.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-unicorn": "^58.0.0",
