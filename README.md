@@ -328,7 +328,7 @@ export const Secondary: Story = {
 };
 ```
 
-### Code Quality Analysis - SonarCloud
+### Code Quality Analysis
 
 For learning clean code best practices, we recommend checking out our repository [Clean-Code](https://github.com/HelgaZhizhka/mentor-resources/blob/master/clean-code/index.md), which contains all the practices for students.
 
